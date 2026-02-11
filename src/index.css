@@ -1,0 +1,513 @@
+body {
+  margin: 0;
+  background: #dce6f2;
+  color: #222;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 170px;
+  background: white;
+  border-bottom: 1px solid #cfdff0;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.header-img {
+  width: 100%;
+  height:170px;
+  display: block;
+}
+
+ .logo {
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  height: 80px;
+  width: 100px;
+  border-radius: 6px;
+  transition: transform 0.20s;
+}
+.logo:hover {
+  transform: scale(2);
+}
+
+.navbar {
+  position: fixed;
+  top: 170px;
+  left: 0;
+  width: 100%;
+  background: #2b6fb3;
+  z-index: 999;
+  border-bottom: 1px solid #214f7f;
+}
+
+.navbar .btn {
+  margin: 0 5px;
+  font-weight: 500;
+  border-radius: 20px; 
+}
+
+.menubar {
+  padding: 10px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.menubar a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.menubar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+}
+
+.menubar a.active {
+  background-color: white;
+  color: #2b6fb3;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.announce-wrap {
+  position: relative;
+  width: 100%;
+  background: #2b6fb3;
+  color: #fff;
+  overflow: hidden;
+  border-top: 2px solid #074a8f;
+  border-bottom: 2px solid #074a8f;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.announce-items {
+  display: inline-block;
+  white-space: nowrap; 
+  animation: slide-left 18s linear infinite;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.announce-wrap:hover .announce-items {
+  animation-play-state: paused;
+}
+
+ video , audio{
+  display:block;
+  margin: 0 auto;
+  width: 80%;
+ }
+ 
+ .text{
+  text-align: center;
+ }
+
+.page {
+  margin-top: 256px;
+  padding-left:40px;
+}
+
+.main { 
+  padding-right: 10px;
+  padding-left: 20px;
+ }
+
+.sidebar{ 
+  padding-right: 10px;
+   transition: transform 0.22s ease;
+ }
+
+
+ .sidebar:hover {
+   transform: scale(1.2);
+}
+
+.side-box {
+  background: white;
+  padding: 10px;
+  border: 1px solid #e6f0fb;
+  margin-top:12px;
+}
+
+.home-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #123a6b;
+}
+
+
+.img-caption {
+  text-align: center;
+  font-size: 14px;
+  color: #1f4f8a;
+  margin-top: 6px;
+  font-weight: bold;
+  transition: transform 0.15s, color 0.15s;
+}
+
+.img-caption:hover {
+  transform: scale(1.06);
+  color: #0b2f6d;
+  text-decoration: underline;
+}
+
+footer {
+  background: #123a6b;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: 18px;
+  padding-bottom: 25px;
+}
+
+
+/* ===== ABOUT US PAGE ===== */
+
+.about-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.about-heading {
+  margin-top: 10px;
+}
+
+.about-heading-small {
+  margin-top: 12px;
+}
+
+.italic-line {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.mission-section {
+  margin-top: 18px;
+}
+
+.center-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.mission-table {
+  width: 100%;
+  margin-top: 10px;
+   background: #c8d7eb;
+}
+
+.mission-table th,
+.mission-table td {
+  border: 1px solid #d2e3f5;
+  padding: 8px;
+}
+
+.mission-table th {
+  background: #3e6ea9;
+  font-weight: bold;
+}
+
+/* ===== Registration page ===== */
+#registration-title {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 0 12px 0;
+  font-weight: bold;
+}
+
+.registration-form {
+  max-width: 760px;
+  margin: 0 auto 16px;
+  background: #f1f4f7;
+  padding: 12px;
+  border: 1px solid #a8a8a8;
+  border-radius: 4px;
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+
+.registration-form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+}
+
+.form-row-pop {
+   transition: transform 0.12s, 
+  }
+
+.form-row-pop:hover {
+  transform: translateY(-3px);
+   background: #dedee1; 
+  }
+
+
+
+/* ===== Contact page  ===== */
+
+#contact-title {
+   text-align:center;
+   font-size:30px;
+   margin:6px 0;
+   font-weight:bold;
+   }
+
+#contact-sub {
+   text-align:center;
+   color:#33475b; 
+   margin-bottom:12px;
+   }
+
+.contact-form {
+  max-width: 680px;
+  margin: 0 auto 12px;
+  background:#f1f4f7;
+  padding: 12px;
+  border:  1px solid #a8a8a8;
+  border-radius: 4px;
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+
+.contact-form:hover {
+   transform: translateY(-4px); 
+   box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+   }
+
+
+
+/* ===== Booking page ===== */
+
+.booking-title {
+   text-align:center; 
+   font-size:30px; 
+   margin:6px 0; 
+   font-weight:bold;
+  }
+
+.booking-form { 
+   max-width:820px;
+   margin: 0 auto 12px;
+   background: #f1f4f7;
+   padding:14px;
+   border:1px solid #a8a8a8; 
+   border-radius:4px;
+  transition: transform 0.12s; 
+  }
+
+.booking-form:hover {
+   transform: translateY(-4px); 
+   box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+   }
+
+
+
+/* ===== Destinations page ===== */
+.dest-card {
+  background: #fff;
+  border: 1px solid #e6f0fb;
+  padding: 8px;
+  transition: transform 0.14s, box-shadow 0.14s;
+}
+.dest-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px gray;
+}
+
+.dest-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.dest-img:hover{
+ transform: translateY(-6px);
+  box-shadow: 0 10px 22px gray;
+}
+.dest-title {
+  margin: 8px 0 4px 0;
+  font-size: 18px;
+}
+.dest-link {
+  color:#074a8f;
+  display: block;
+  text-decoration: none;
+}
+
+.dest-link:hover .dest-title {
+  text-decoration: underline;
+}
+
+
+.menubar a.active-link {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+@media screen {
+  .dest-img { height: 160px; }
+}
+
+
+/* ===== Countries ===== */
+
+.place-list {
+  background:#2b6fb3;
+  padding: 15px 20px;
+  border: 1px solid #dbe8f7;
+  border-radius: 6px;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.place-list h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.place-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.place-list li {
+  background: #f1f7ff;
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-left: 4px solid #2b6fb3;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.place-list li:hover {
+  background: #e3f0ff;
+}
+
+
+.travel-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  background: white;
+  border: 2px solid #cfdff0;
+}
+
+.travel-table th,
+.travel-table td {
+  border: 1px solid #cfdff0;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.travel-table th {
+  background: #2b6fb3;
+  color:#f1f4f7 ;
+  font-weight: bold;
+}
+
+
+.travel-table tr:hover {
+  background: #e3f0ff;
+}
+
+.gallery {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.gallery figure {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #dbe8f7;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.gallery figure:hover {
+  transform: scale(1.03);
+}
+
+.gallery img {
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #e2e2e2;
+}
+
+.gallery figcaption {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #123a6b;
+  font-size: 16px;
+}
+
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1;
+}
+
+
+/* ===== DestinationsList ===== */
+.flag-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.flag-img {
+  width: 60px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.country-info {
+  color: #333;
+  line-height: 1.4;
+}
+
+.country-name {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  color: #2b6fb3;
+  font-weight: bold;
+}
